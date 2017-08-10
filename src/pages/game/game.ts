@@ -2,13 +2,16 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-game',
+  templateUrl: 'game.html',
 })
-export class HomePage {
+export class GamePage {
 
   constructor(public navCtrl: NavController) {
+  }
 
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad GamePage');
   }
 
 }

@@ -1,0 +1,22 @@
+<!--
+  Generated template for the TeamsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Teams</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-list>
+    <button ion-item (click)="itemTapped($event,team.name)" *ngFor="let team of teams.teams">
+      <img src={{team.crestUrl}} height="50" width="50" /><strong>{{team.name}}</strong>
+    </button>
+</ion-list>
+</ion-content>
